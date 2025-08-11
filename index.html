@@ -122,8 +122,8 @@
         margin-left: 10px;
         padding: 10px 20px;
         font-size: 16px;
-        background-color: white;
-        color: green;
+        background-color: rgb(223, 212, 212);
+        color: black;
         border: none;
         border-radius: 8px;
         cursor: pointer;
@@ -134,14 +134,14 @@
 
   <div class="top-left">
     <img src="https://www.laliguedelenseignement-37.fr/wp-content/uploads/sites/17/2023/08/logo-MPT-horizontal-CMJN-1536x553.png" alt="Image gauche">
-    <div class="address"> 8 allée Monteverdi</div>
+    <div class="address">Adresse: 8 allée Monteverdi</div>
   </div>
 
   <div class="container">
-    <h1 class="main-title">Le Groupements d'achats de quartier Les Fontaines</h1>
+    <h1 class="main-title">Le Groupements d'achats du quartier des Fontaines</h1>
     <img src="https://tse1.mm.bing.net/th/id/OIP.B9NMfPdZtdIRE5jqtf9PDAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" class="logo" alt="Logo">
     
-    <p class="welcome-text">Bienvenue sur notre site, votre source de produits bio de qualité à prix solidaires !</p>
+    <p class="welcome-text">Bienvenue sur notre site, votre source de produits <strong>bio</strong>! du producteur au consommateur! du champ à votre assiette! à prix réduits!</p>
 
     <div class="about-container">
       <div class="about-box" onclick="toggleIntro()">Qui sommes-nous ?</div>
@@ -151,11 +151,10 @@
       Nous sommes un groupement d'achat engagé à vous fournir des fruits, légumes et pâtes bio, issu directement des producteurs locaux et accessibles à prix réduits, en partenariat avec l'association "Maison Pour Tous". Ce projet vous garantit des produits plus sains et bio, respectueux de l'environnement, à des prix raisonnables. Notre objectif est de favoriser une consommation responsable, en réduisant les intermédiaires, pour vous offrir le meilleur de la nature tout en soutenant les producteurs de proximité.
     </div>
 
-    <button class="join-button" onclick="validatePassword()">Connectez-vous</button>
-
+    <button class="join-button" onclick="validatepassword()">Connectez-vous</button>
     <div class="password-input">
       <input type="password" id="password" placeholder="Mot de passe">
-      <button class="validate-button" onclick="validatepassword()">valider</button>
+      <button class="validate-button" onclick="validatePassword()">valider </button>
       <div id="error" class="error"></div>
     </div>
   </div>
@@ -173,7 +172,7 @@
     function validatePassword() {
       var pass = document.getElementById("password").value;
       if (pass === "MPT.GA") {
-        window.location.href = "https://www.example.com/page-suivante.html"; // Remplace par la bonne URL
+        window.location.href = "https://mpt-ga.github.io/page2-html/"; // Remplace par la bonne URL
       } else {
         document.getElementById("error").innerText = "Mot de passe incorrect. Veuillez réessayer.";
       }
